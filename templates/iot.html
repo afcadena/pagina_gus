@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>{{ titulo }}</h1>
+
+<div class="content-container" style="display: flex; align-items: center; justify-content: space-between;">
+
+    <!-- Texto a la izquierda -->
+    <div class="text-container" style="flex: 1; padding-right: 20px;">
+        <p>El Internet de las Cosas (IoT) es un concepto revolucionario que conecta dispositivos cotidianos a Internet, permitiendo la comunicación entre ellos y con nosotros. Con IoT, dispositivos como neveras, luces, autos y más pueden ser monitoreados y controlados de manera remota.</p>
+        <p>Su implementación está transformando sectores como el hogar, la industria, la salud y la agricultura, aportando eficiencia y nuevas capacidades.</p>
+    </div>
+
+    
+    <div class="image-container" style="flex: 1; text-align: right;">
+        <img src="{{ url_for('static', filename='img/descarga.jpg') }}" alt="Imagen de Internet de las Cosas" style="max-width: 100%; height: auto;">
+    </div>
+
+</div>
+{% endblock %}
